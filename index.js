@@ -10,9 +10,12 @@ var copycontentElem = document
   });
 
 var handleButtonClick = (event) => {
-  let randomNumber = Math.round(Math.random() * 1000000)
-    .toString(16)
-    .padStart(6, "0");
+  let hexarray = "123456789abcdef";
+  var randomNumber = "";
+  for (let a = 0; a < 6; a++) {
+    randomNumber = randomNumber + hexarray[Math.floor(Math.random() * 15)];
+    console.log(randomNumber);
+  }
 
   if (event.target.name === "btn1") {
     let UnchangedColor = event.target.nextElementSibling.textContent;
