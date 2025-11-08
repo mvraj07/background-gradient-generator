@@ -3,7 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <title>Gradient Generator</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(135deg, #f2f2f2, #eec303);
+      }
+      h1 {
+        font-size: 5.6rem;
+      }
+
+      .container {
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        display: grid;
+        place-content: center;
+        justify-items: center;
+        row-gap: 10rem;
+      }
+      .btn {
+        border-radius: 2.5rem;
+        padding: 0.5rem 1rem;
+        width: 30rem;
+        height: 10rem;
+        font-size: 2rem;
+        font-weight: 400;
+        border: none;
+        background-color: white;
+        box-shadow: 2px 2px 4px 2px black;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 30%;
+      }
+      .copycontent {
+        width: 50rem;
+        height: 7rem;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 2px 2px 4px 2px black;
+        color: white;
+        font-weight: 500;
+        padding: 1rem;
+
+        border-radius: 2.5rem;
+        place-content: center;
+        text-align: center;
+        font-size: 1.8rem;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1>Generate Gradient You Like</h1>
+      <div class="buttons">
+        <button class="btn" name="btn1">#ff0000</button
+        ><button class="btn" name="btn2">#0000ff</button>
+      </div>
+      <div class="copycontent">#click here to copy it</div>
+    </div>
+    <script src="./index.js" />
+  </body>
 </html>
